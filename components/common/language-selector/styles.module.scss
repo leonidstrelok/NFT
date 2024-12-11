@@ -1,0 +1,74 @@
+$deeply-embarrassed: transparent;
+$white: #002046;
+.lang-selector {
+  position: relative;
+}
+
+.lang-button {
+  border-radius: 60px;
+  border: 1px solid $deeply-embarrassed;
+  transition: 0.3s;
+  padding: 6.5px 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: $deeply-embarrassed;
+  }
+  &:focus {
+    background-color: $deeply-embarrassed;
+  }
+}
+
+.fade-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -70px;
+  height: 100%;
+  z-index: 3000;
+}
+
+.langs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid $deeply-embarrassed;
+  background-color: $white;
+  overflow: hidden;
+  width: 110px;
+  margin: 0;
+  padding: 12px;
+  li {
+    margin: 0 0 0 ;
+    padding: 8px;
+    display: block;
+    text-align: start;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 5px;
+    }
+  }
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  user-select: none;
+  text-transform: capitalize;
+  text-align: center;
+  color: inherit;
+  .flag {
+    border-radius: 50%;
+  }
+  span {
+    margin: 0 5px;
+  }
+}

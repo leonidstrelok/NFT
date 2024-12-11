@@ -1,0 +1,105 @@
+.wrapper {
+    color: white;
+
+    .name {
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 0.744416px;
+    }
+
+    .userInfo {
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.744416px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .priceWrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 40px;
+
+        .price {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 40px;
+            letter-spacing: 0.744416px;
+        }
+    }
+
+
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 32px;
+        width: 92px;
+        height: 50px;
+        background: linear-gradient(141.56deg, #A736E0 -4.76%, #351147 120.26%);
+        border-radius: 8px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .paragraphWrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .blockWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 12px;
+        margin-bottom: 40px;
+
+        .subheader {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 40px;
+            letter-spacing: 0.744416px;
+        }
+
+        .text {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.744416px;
+            color: rgba(255, 255, 255, 0.7);
+
+            .chip {
+                display: flex;
+                gap: 8px;
+                padding: 4px 8px;
+                color: #fff;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+                cursor: default;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 32px;
+                letter-spacing: 0.744416px;
+
+                .key {
+                    font-weight: 700;
+                }
+            }
+
+            .tagsWrapper {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+
+  goldor-front:
+    image: front-goldor:latest
+    container_name: goldor-front
+    restart: unless-stopped
+
+networks:
+  default:
+    external: true
+    name: nginx_default

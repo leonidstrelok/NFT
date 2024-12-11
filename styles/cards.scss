@@ -1,0 +1,453 @@
+.kaplii-card {
+  width: 264px;
+  background-color: rgba(33, 39, 97, 1);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+
+  &__category-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &__collection-badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 8px;
+
+    position: absolute;
+    height: 32px;
+    right: 12px;
+    top: 220px;
+
+    background: rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+
+  &__preview {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__preview-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    & > img {
+      width: 70px;
+    }
+
+    & > * > h4 {
+       
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 40px;
+      /* identical to box height, or 167% */
+
+      text-align: center;
+      letter-spacing: 0.74px;
+
+      /* Typography/Сolor 1 */
+
+      color: #ffffff;
+    }
+
+    & > * > p {
+       
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+
+      text-align: center;
+      letter-spacing: 0.74px;
+
+      /* Typography/Color 2 */
+
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 8px;
+    }
+  }
+
+  &__content {
+    cursor: pointer;
+    height: 100%;
+  }
+}
+
+.nft-card {
+  height: 385px;
+
+  &__category-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__image {
+    height: 264px;
+    border-radius: 16px;
+    background-color: rgb(43, 50, 120);
+    overflow: hidden;
+    z-index: 9;
+  }
+
+  &__content {
+    padding-bottom: 20px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    gap: 4px;
+  }
+
+  &__author-name {
+     
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+    letter-spacing: 0.744416px;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__nft-name {
+     
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.744416px;
+
+    color: #ffffff;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__price {
+    display: flex;
+    gap: 8px;
+    height: 45px;
+    padding: 12px 8px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    width: 100%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.auction-card {
+  height: 441px;
+
+  &__category-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__image {
+    height: 264px;
+    border-radius: 0 0 16px 16px;
+    background-color: rgb(43, 50, 120);
+    overflow: hidden;
+    z-index: 9;
+  }
+
+  &__content {
+    padding-bottom: 20px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    gap: 4px;
+  }
+
+  &__author-name {
+     
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* or 138% */
+
+    letter-spacing: 0.744416px;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__nft-name {
+     
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.744416px;
+
+    color: #ffffff;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  &__price {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+     
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.744416px;
+
+    /* Typography/Сolor 1 */
+
+    color: #ffffff;
+  }
+
+  &__end-time {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+     
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.744416px;
+
+    /* Typography/Сolor 1 */
+
+    color: #ffffff;
+
+    & > * > span {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.collection-card {
+  height: 340px;
+
+  overflow: hidden;
+  background: #212761;
+  border-radius: 20px;
+  position: relative;
+  box-sizing: border-box;
+
+  &__logo {
+    width: 113px;
+    height: 113px;
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    border-radius: 14px;
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    z-index: 2;
+    background-size: cover;
+    background-position: center;
+
+    &_small {
+      width: 80px;
+      height: 80px;
+      left: 20px;
+      top: 73px;
+      outline: 4px solid #212761;
+      border: 2px solid rgba(255, 255, 255, 0.16);
+      background-color: #212761;
+      border-radius: 8px;
+    }
+  }
+
+  &__banner {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__content {
+    padding: 24px 20px;
+    padding-top: 157px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 4px;
+    width: 100%;
+  }
+
+  &__author-name {
+     
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+    letter-spacing: 0.744416px;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__nft-name {
+     
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 178% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.744416px;
+
+    color: #ffffff;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 38px;
+    padding: 7px 16px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+     
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.744416px;
+
+    /* Typography/Сolor 1 */
+
+    color: #ffffff;
+  }
+}

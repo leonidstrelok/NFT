@@ -1,0 +1,26 @@
+.main-page {
+  // background-image: url('/assets/png/metallic-holographic-background-1.png'),
+  //   url('/assets/png/background-image-2.png'), url('/assets/png/ellipse-3.png'),
+  //   url('/assets/png/ellipse-6.png');
+  // background-position: top 180px right 450px, top 260px right 450px,
+  //   top 100px right 450px, bottom 40px right 450px;
+  // background-repeat: no-repeat;
+
+  background-image: url('../public/assets/jpg/Backfon.png');
+  background-position: top 0 right 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (max-width: 904px) {
+    background-size: 50%, 100%;
+    background-position: bottom 0px right 0px, bottom 0px right -68px;
+    margin-top: 70px;
+  }
+}
+
+.main-page-mobile {
+  background-image: url('../public/assets/jpg/Backfon-mobile.png');
+  background-position: top -150px right 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

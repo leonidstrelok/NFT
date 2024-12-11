@@ -1,0 +1,26 @@
+variables:
+    GIT_STRATEGY: clone
+    IMAGE_NAME: "front-goldor:latest"
+
+stages:
+    - build
+    - deploy
+
+build_image:
+    tags:
+        - shell-runner
+    stage: build
+    script:
+        - docker build -t $IMAGE_NAME .
+
+
+deploy_to_dev:
+    stage: deploy
+    tags:
+        - shell-runner
+    needs:
+        - build_image
+    script:
+        - echo "Test"
+        - docker compose down
+        - docker compose up -d

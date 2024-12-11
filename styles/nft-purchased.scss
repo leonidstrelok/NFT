@@ -1,0 +1,79 @@
+.content-nft-purchased {
+  &__action-bar {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 138px;
+    margin-bottom: 60px;
+  }
+
+  &__search-field {
+    width: 100%;
+    min-width: 360px;
+  }
+
+  &__filter-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+    gap: 32px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    /* identical to box height, or 229% */
+
+    text-align: right;
+    letter-spacing: 0.744416px;
+
+    color: #ffffff;
+  }
+
+  &__filter-counter {
+    width: max-content;
+  }
+
+  &__nft-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.nft-item-page {
+  &__content {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+  }
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-radius: 8px !important;
+  border-width: 1px !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+.MuiOutlinedInput-input {
+  height: 50px;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 42px;
+  /* identical to box height, or 262% */
+
+  &::placeholder {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+
+  letter-spacing: 0.5px;
+}
